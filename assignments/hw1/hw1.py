@@ -1,34 +1,49 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Christian Fowler
+hw1.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: Provides functions and calculations for different formulas.
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
 
 
 def calc_rec_area():
-    pass
+    length = eval(input("Enter the length: "))
+    width = eval(input("Enter the width: "))
+    area = length * width
+    print("Area =", area)
 
 
 def calc_volume():
-    pass
+    length = eval(input("Enter the length: "))
+    width = eval(input("Enter the width: "))
+    height = eval(input("Enter the height: "))
+    volume = length * width * height
+    print("Volume =", volume)
 
 
 def shooting_percentage():
-    pass
+    total = eval(input("Enter the player's total shots: "))
+    made = eval(input("Enter how many shots the player made: "))
+    percentage = made / total
+    print("Shooting Percentage:", percentage)
 
 
 def coffee():
-    pass
+    pounds = eval(input("How many pounds of coffee would you like? "))
+    cost = 10.5 * pounds
+    shipping = 0.86 * pounds
+    overhead = 1.5
+    total = cost + shipping + overhead
+    print("Your total is:", total)
 
 
 def kilometers_to_miles():
-    pass
+    kilometers = eval(input("How many kilometers did your travel? "))
+    miles = kilometers / 1.61
+    print("That's", miles, "miles!")
 
 
 if __name__ == '__main__':
