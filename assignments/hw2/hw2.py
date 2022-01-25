@@ -1,35 +1,57 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Christian Fowler
+hw2.py
 
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+Problem: Calculates various types of mathematical equations.
 
 Certification of Authenticity:
 <include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
+
 """
 import math
 
 
 def sum_of_threes():
-    pass
+    bound = eval(input("What is the upper bound? "))
+    sum = 0
+    for i in range(0,bound + 3):
+            if (i % 3 == 0):
+                sum = sum + i
+    print("Sum of threes is ", sum)
 
 
 def multiplication_table():
-    pass
+    for i in range(1,11):
+        print('\t')
+        for j in range(1,11):
+            print(i * j, end = '\t')
 
 
 def triangle_area():
-    pass
+    a = eval(input("What is the length of side a? "))
+    b = eval(input("What is the length of side b? "))
+    c = eval(input("What is the length of side c? "))
+    s = (a + b + c)/2
+    area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    print("The area is", area)
 
 
 def sum_squares():
-    pass
+    lower = eval(input("Enter lower bound: "))
+    upper = eval(input("Enter upper bound: "))
+    sum = 0
+    for i in range(lower, upper + 1):
+        sum = sum + i**2
+    print(sum)
 
 
 def power():
-    pass
+    base = eval(input("Enter a base: "))
+    exponent = eval(input("Enter an exponent: "))
+    solution = base**exponent
+    print(base, " ^ ", exponent, " = ", solution)
+
 
 
 if __name__ == '__main__':
