@@ -1,3 +1,14 @@
+"""
+Name: Christian Fowler
+lab3.py
+
+Problem: DOT traffic program - Calculates average and total traffic on specified roads on specified days.
+
+Certification of Authenticity:
+<include one of the following>
+I certify that this assignment is entirely my own work.
+"""
+
 def traffic():
     total_cars = 0
     road_counter = 1
