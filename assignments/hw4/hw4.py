@@ -13,7 +13,6 @@ import math
 
 from graphics import *
 
-
 def squares():
     width = 400
     height = 400
