@@ -80,16 +80,6 @@ def triangle():
     win.close()
 
 def color_shape():
-    width = 500
-    height = 500
-    win = GraphWin("Color Shape", width, height)
-
-    instructions = Text(Point((win.getWidth() / 2), (win.getHeight() - 20)), "")
-    instructions.setSize(15)
-    instructions.setTextColor('red')
-    instructions.draw(win)
-
-def color_shape():
     #Creates window
     width = 500
     height = 500
