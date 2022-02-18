@@ -2,7 +2,7 @@
 Name: Christian Fowler
 hw5.py
 
-Problem: Continues practice with strings and lists
+Problem: Continues practice with strings and lists.
 
 Certification of Authenticity:
 <include one of the following>
@@ -11,8 +11,9 @@ I certify that this assignment is entirely my own work.
 
 def name_reverse():
     name = str(input("Enter a name (first & last): "))
-    output = name.split(" ")
-    print(output[1], "\b,", output[0])
+    splitter = name.split(" ")
+    output = '{}, {}'.format(splitter[1], splitter[0])
+    print(output)
 
 def company_name():
     url = input("Enter a domain")
@@ -45,14 +46,14 @@ def names():
 def thirds():
     counter = 0
     terms = eval(input("Enter the number of sentences:"))
+    output = []
     for i in range(terms):
-        output = ''
         counter = counter + 1
         sentence = input("Enter Sentence {}:".format(counter))
-        for j in range(0, len(sentence), 3):
-            third = sentence[j]
-            output = output + third
-        print(output)
+        output.append(sentence)
+    for j in range(0, len(output)):
+        third = output[j][0::3]
+        print(third)
 
 def word_average():
     sentence = input("Enter a sentence:")
